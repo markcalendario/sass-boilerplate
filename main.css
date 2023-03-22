@@ -1,105 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.text-xs {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.text-sm {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.text-base {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.text-lg {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.text-xl {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.text-2xl {
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.text-3xl {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.text-4xl {
-  font-size: 36px;
-  line-height: 40px;
-}
-
-.text-5xl {
-  font-size: 48px;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 60px;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 72px;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 96px;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 128px;
-  line-height: 1;
-}
-
-.font-thin {
-  font-weight: 100;
-}
-
-.font-extralight {
-  font-weight: 200;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
 p, a {
   font-size: 14px;
 }
@@ -202,4 +101,280 @@ p, a {
   .col-s-12 {
     width: 100%;
   }
+}
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-2xl {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-3xl {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-4xl {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-5xl {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 96px;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 128px;
+  line-height: 1;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.text-slate {
+  color: #f8fafc;
+}
+
+.text-slate-1 {
+  color: #f1f5f9;
+}
+
+.text-slate-2 {
+  color: #e2e8f0;
+}
+
+.text-slate-3 {
+  color: #cbd5e1;
+}
+
+.text-slate-4 {
+  color: #94a3b8;
+}
+
+.text-slate-5 {
+  color: #64748b;
+}
+
+.text-slate-6 {
+  color: #475569;
+}
+
+.text-slate-7 {
+  color: #334155;
+}
+
+.text-slate-8 {
+  color: #1e293b;
+}
+
+.text-slate-9 {
+  color: #0f172a;
+}
+
+.text-red {
+  color: #ef4444;
+}
+
+.text-red-variant {
+  color: #b91c1c;
+}
+
+.text-orange {
+  color: #c2410c;
+}
+
+.text-orange-variant {
+  color: #c2410c;
+}
+
+.text-yellow {
+  color: #fbbf24;
+}
+
+.text-yellow-variant {
+  color: #d97706;
+}
+
+.text-green {
+  color: #16a34a;
+}
+
+.text-green-variant {
+  color: #166534;
+}
+
+.text-blue {
+  color: #2563eb;
+}
+
+.text-blue-variant {
+  color: #1e40af;
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.text-primary-variant {
+  color: #1e40af;
+}
+
+.bg-slate {
+  background-color: #f8fafc;
+}
+
+.bg-slate-1 {
+  background-color: #f1f5f9;
+}
+
+.bg-slate-2 {
+  background-color: #e2e8f0;
+}
+
+.bg-slate-3 {
+  background-color: #cbd5e1;
+}
+
+.bg-slate-4 {
+  background-color: #94a3b8;
+}
+
+.bg-slate-5 {
+  background-color: #64748b;
+}
+
+.bg-slate-6 {
+  background-color: #475569;
+}
+
+.bg-slate-7 {
+  background-color: #334155;
+}
+
+.bg-slate-8 {
+  background-color: #1e293b;
+}
+
+.bg-slate-9 {
+  background-color: #0f172a;
+}
+
+.bg-red {
+  background-color: #ef4444;
+}
+
+.bg-red-variant {
+  background-color: #b91c1c;
+}
+
+.bg-orange {
+  background-color: #c2410c;
+}
+
+.bg-orange-variant {
+  background-color: #c2410c;
+}
+
+.bg-yellow {
+  background-color: #fbbf24;
+}
+
+.bg-yellow-variant {
+  background-color: #d97706;
+}
+
+.bg-green {
+  background-color: #16a34a;
+}
+
+.bg-green-variant {
+  background-color: #166534;
+}
+
+.bg-blue {
+  background-color: #2563eb;
+}
+
+.bg-blue-variant {
+  background-color: #1e40af;
+}
+
+.bg-primary {
+  background-color: #2563eb;
+}
+
+.bg-primary-variant {
+  background-color: #1e40af;
 }/*# sourceMappingURL=main.css.map */
