@@ -1,3 +1,9 @@
-// import needed scss here
-
-@import "./layouts/responsive"
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./abstracts/background-colors";
+@import "./abstracts/text-colors";
+@import "./abstracts/text-sizes";
+@import "./abstracts/text-weights";
+@import "./base/typography";
+@import "./layouts/responsive";

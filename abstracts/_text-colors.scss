@@ -1,0 +1,899 @@
+@mixin text-inherit {
+	color: inherit;
+}
+
+@mixin text-current {
+	color: currentColor;
+}
+
+@mixin text-transparent {
+	color: transparent;
+}
+
+@mixin text-black {
+	color: rgb(0 0 0);
+}
+
+@mixin text-white {
+	color: rgb(255 255 255);
+}
+
+@mixin text-slate-50 {
+	color: rgb(248 250 252);
+}
+
+@mixin text-slate-100 {
+	color: rgb(241 245 249);
+}
+
+@mixin text-slate-200 {
+	color: rgb(226 232 240);
+}
+
+@mixin text-slate-300 {
+	color: rgb(203 213 225);
+}
+
+@mixin text-slate-400 {
+	color: rgb(148 163 184);
+}
+
+@mixin text-slate-500 {
+	color: rgb(100 116 139);
+}
+
+@mixin text-slate-600 {
+	color: rgb(71 85 105);
+}
+
+@mixin text-slate-700 {
+	color: rgb(51 65 85);
+}
+
+@mixin text-slate-800 {
+	color: rgb(30 41 59);
+}
+
+@mixin text-slate-900 {
+	color: rgb(15 23 42);
+}
+
+@mixin text-gray-50 {
+	color: rgb(249 250 251);
+}
+
+@mixin text-gray-100 {
+	color: rgb(243 244 246);
+}
+
+@mixin text-gray-200 {
+	color: rgb(229 231 235);
+}
+
+@mixin text-gray-300 {
+	color: rgb(209 213 219);
+}
+
+@mixin text-gray-400 {
+	color: rgb(156 163 175);
+}
+
+@mixin text-gray-500 {
+	color: rgb(107 114 128);
+}
+
+@mixin text-gray-600 {
+	color: rgb(75 85 99);
+}
+
+@mixin text-gray-700 {
+	color: rgb(55 65 81);
+}
+
+@mixin text-gray-800 {
+	color: rgb(31 41 55);
+}
+
+@mixin text-gray-900 {
+	color: rgb(17 24 39);
+}
+
+@mixin text-zinc-50 {
+	color: rgb(250 250 250);
+}
+
+@mixin text-zinc-100 {
+	color: rgb(244 244 245);
+}
+
+@mixin text-zinc-200 {
+	color: rgb(228 228 231);
+}
+
+@mixin text-zinc-300 {
+	color: rgb(212 212 216);
+}
+
+@mixin text-zinc-400 {
+	color: rgb(161 161 170);
+}
+
+@mixin text-zinc-500 {
+	color: rgb(113 113 122);
+}
+
+@mixin text-zinc-600 {
+	color: rgb(82 82 91);
+}
+
+@mixin text-zinc-700 {
+	color: rgb(63 63 70);
+}
+
+@mixin text-zinc-800 {
+	color: rgb(39 39 42);
+}
+
+@mixin text-zinc-900 {
+	color: rgb(24 24 27);
+}
+
+@mixin text-neutral-50 {
+	color: rgb(250 250 250);
+}
+
+@mixin text-neutral-100 {
+	color: rgb(245 245 245);
+}
+
+@mixin text-neutral-200 {
+	color: rgb(229 229 229);
+}
+
+@mixin text-neutral-300 {
+	color: rgb(212 212 212);
+}
+
+@mixin text-neutral-400 {
+	color: rgb(163 163 163);
+}
+
+@mixin text-neutral-500 {
+	color: rgb(115 115 115);
+}
+
+@mixin text-neutral-600 {
+	color: rgb(82 82 82);
+}
+
+@mixin text-neutral-700 {
+	color: rgb(64 64 64);
+}
+
+@mixin text-neutral-800 {
+	color: rgb(38 38 38);
+}
+
+@mixin text-neutral-900 {
+	color: rgb(23 23 23);
+}
+
+@mixin text-stone-50 {
+	color: rgb(250 250 249);
+}
+
+@mixin text-stone-100 {
+	color: rgb(245 245 244);
+}
+
+@mixin text-stone-200 {
+	color: rgb(231 229 228);
+}
+
+@mixin text-stone-300 {
+	color: rgb(214 211 209);
+}
+
+@mixin text-stone-400 {
+	color: rgb(168 162 158);
+}
+
+@mixin text-stone-500 {
+	color: rgb(120 113 108);
+}
+
+@mixin text-stone-600 {
+	color: rgb(87 83 78);
+}
+
+@mixin text-stone-700 {
+	color: rgb(68 64 60);
+}
+
+@mixin text-stone-800 {
+	color: rgb(41 37 36);
+}
+
+@mixin text-stone-900 {
+	color: rgb(28 25 23);
+}
+
+@mixin text-red-50 {
+	color: rgb(254 242 242);
+}
+
+@mixin text-red-100 {
+	color: rgb(254 226 226);
+}
+
+@mixin text-red-200 {
+	color: rgb(254 202 202);
+}
+
+@mixin text-red-300 {
+	color: rgb(252 165 165);
+}
+
+@mixin text-red-400 {
+	color: rgb(248 113 113);
+}
+
+@mixin text-red-500 {
+	color: rgb(239 68 68);
+}
+
+@mixin text-red-600 {
+	color: rgb(220 38 38);
+}
+
+@mixin text-red-700 {
+	color: rgb(185 28 28);
+}
+
+@mixin text-red-800 {
+	color: rgb(153 27 27);
+}
+
+@mixin text-red-900 {
+	color: rgb(127 29 29);
+}
+
+@mixin text-orange-50 {
+	color: rgb(255 247 237);
+}
+
+@mixin text-orange-100 {
+	color: rgb(255 237 213);
+}
+
+@mixin text-orange-200 {
+	color: rgb(254 215 170);
+}
+
+@mixin text-orange-300 {
+	color: rgb(253 186 116);
+}
+
+@mixin text-orange-400 {
+	color: rgb(251 146 60);
+}
+
+@mixin text-orange-500 {
+	color: rgb(249 115 22);
+}
+
+@mixin text-orange-600 {
+	color: rgb(234 88 12);
+}
+
+@mixin text-orange-700 {
+	color: rgb(194 65 12);
+}
+
+@mixin text-orange-800 {
+	color: rgb(154 52 18);
+}
+
+@mixin text-orange-900 {
+	color: rgb(124 45 18);
+}
+
+@mixin text-amber-50 {
+	color: rgb(255 251 235);
+}
+
+@mixin text-amber-100 {
+	color: rgb(254 243 199);
+}
+
+@mixin text-amber-200 {
+	color: rgb(253 230 138);
+}
+
+@mixin text-amber-300 {
+	color: rgb(252 211 77);
+}
+
+@mixin text-amber-400 {
+	color: rgb(251 191 36);
+}
+
+@mixin text-amber-500 {
+	color: rgb(245 158 11);
+}
+
+@mixin text-amber-600 {
+	color: rgb(217 119 6);
+}
+
+@mixin text-amber-700 {
+	color: rgb(180 83 9);
+}
+
+@mixin text-amber-800 {
+	color: rgb(146 64 14);
+}
+
+@mixin text-amber-900 {
+	color: rgb(120 53 15);
+}
+
+@mixin text-yellow-50 {
+	color: rgb(254 252 232);
+}
+
+@mixin text-yellow-100 {
+	color: rgb(254 249 195);
+}
+
+@mixin text-yellow-200 {
+	color: rgb(254 240 138);
+}
+
+@mixin text-yellow-300 {
+	color: rgb(253 224 71);
+}
+
+@mixin text-yellow-400 {
+	color: rgb(250 204 21);
+}
+
+@mixin text-yellow-500 {
+	color: rgb(234 179 8);
+}
+
+@mixin text-yellow-600 {
+	color: rgb(202 138 4);
+}
+
+@mixin text-yellow-700 {
+	color: rgb(161 98 7);
+}
+
+@mixin text-yellow-800 {
+	color: rgb(133 77 14);
+}
+
+@mixin text-yellow-900 {
+	color: rgb(113 63 18);
+}
+
+@mixin text-lime-50 {
+	color: rgb(247 254 231);
+}
+
+@mixin text-lime-100 {
+	color: rgb(236 252 203);
+}
+
+@mixin text-lime-200 {
+	color: rgb(217 249 157);
+}
+
+@mixin text-lime-300 {
+	color: rgb(190 242 100);
+}
+
+@mixin text-lime-400 {
+	color: rgb(163 230 53);
+}
+
+@mixin text-lime-500 {
+	color: rgb(132 204 22);
+}
+
+@mixin text-lime-600 {
+	color: rgb(101 163 13);
+}
+
+@mixin text-lime-700 {
+	color: rgb(77 124 15);
+}
+
+@mixin text-lime-800 {
+	color: rgb(63 98 18);
+}
+
+@mixin text-lime-900 {
+	color: rgb(54 83 20);
+}
+
+@mixin text-green-50 {
+	color: rgb(240 253 244);
+}
+
+@mixin text-green-100 {
+	color: rgb(220 252 231);
+}
+
+@mixin text-green-200 {
+	color: rgb(187 247 208);
+}
+
+@mixin text-green-300 {
+	color: rgb(134 239 172);
+}
+
+@mixin text-green-400 {
+	color: rgb(74 222 128);
+}
+
+@mixin text-green-500 {
+	color: rgb(34 197 94);
+}
+
+@mixin text-green-600 {
+	color: rgb(22 163 74);
+}
+
+@mixin text-green-700 {
+	color: rgb(21 128 61);
+}
+
+@mixin text-green-800 {
+	color: rgb(22 101 52);
+}
+
+@mixin text-green-900 {
+	color: rgb(20 83 45);
+}
+
+@mixin text-emerald-50 {
+	color: rgb(236 253 245);
+}
+
+@mixin text-emerald-100 {
+	color: rgb(209 250 229);
+}
+
+@mixin text-emerald-200 {
+	color: rgb(167 243 208);
+}
+
+@mixin text-emerald-300 {
+	color: rgb(110 231 183);
+}
+
+@mixin text-emerald-400 {
+	color: rgb(52 211 153);
+}
+
+@mixin text-emerald-500 {
+	color: rgb(16 185 129);
+}
+
+@mixin text-emerald-600 {
+	color: rgb(5 150 105);
+}
+
+@mixin text-emerald-700 {
+	color: rgb(4 120 87);
+}
+
+@mixin text-emerald-800 {
+	color: rgb(6 95 70);
+}
+
+@mixin text-emerald-900 {
+	color: rgb(6 78 59);
+}
+
+@mixin text-teal-50 {
+	color: rgb(240 253 250);
+}
+
+@mixin text-teal-100 {
+	color: rgb(204 251 241);
+}
+
+@mixin text-teal-200 {
+	color: rgb(153 246 228);
+}
+
+@mixin text-teal-300 {
+	color: rgb(94 234 212);
+}
+
+@mixin text-teal-400 {
+	color: rgb(45 212 191);
+}
+
+@mixin text-teal-500 {
+	color: rgb(20 184 166);
+}
+
+@mixin text-teal-600 {
+	color: rgb(13 148 136);
+}
+
+@mixin text-teal-700 {
+	color: rgb(15 118 110);
+}
+
+@mixin text-teal-800 {
+	color: rgb(17 94 89);
+}
+
+@mixin text-teal-900 {
+	color: rgb(19 78 74);
+}
+
+@mixin text-cyan-50 {
+	color: rgb(236 254 255);
+}
+
+@mixin text-cyan-100 {
+	color: rgb(207 250 254);
+}
+
+@mixin text-cyan-200 {
+	color: rgb(165 243 252);
+}
+
+@mixin text-cyan-300 {
+	color: rgb(103 232 249);
+}
+
+@mixin text-cyan-400 {
+	color: rgb(34 211 238);
+}
+
+@mixin text-cyan-500 {
+	color: rgb(6 182 212);
+}
+
+@mixin text-cyan-600 {
+	color: rgb(8 145 178);
+}
+
+@mixin text-cyan-700 {
+	color: rgb(14 116 144);
+}
+
+@mixin text-cyan-800 {
+	color: rgb(21 94 117);
+}
+
+@mixin text-cyan-900 {
+	color: rgb(22 78 99);
+}
+
+@mixin text-sky-50 {
+	color: rgb(240 249 255);
+}
+
+@mixin text-sky-100 {
+	color: rgb(224 242 254);
+}
+
+@mixin text-sky-200 {
+	color: rgb(186 230 253);
+}
+
+@mixin text-sky-300 {
+	color: rgb(125 211 252);
+}
+
+@mixin text-sky-400 {
+	color: rgb(56 189 248);
+}
+
+@mixin text-sky-500 {
+	color: rgb(14 165 233);
+}
+
+@mixin text-sky-600 {
+	color: rgb(2 132 199);
+}
+
+@mixin text-sky-700 {
+	color: rgb(3 105 161);
+}
+
+@mixin text-sky-800 {
+	color: rgb(7 89 133);
+}
+
+@mixin text-sky-900 {
+	color: rgb(12 74 110);
+}
+
+@mixin text-blue-50 {
+	color: rgb(239 246 255);
+}
+
+@mixin text-blue-100 {
+	color: rgb(219 234 254);
+}
+
+@mixin text-blue-200 {
+	color: rgb(191 219 254);
+}
+
+@mixin text-blue-300 {
+	color: rgb(147 197 253);
+}
+
+@mixin text-blue-400 {
+	color: rgb(96 165 250);
+}
+
+@mixin text-blue-500 {
+	color: rgb(59 130 246);
+}
+
+@mixin text-blue-600 {
+	color: rgb(37 99 235);
+}
+
+@mixin text-blue-700 {
+	color: rgb(29 78 216);
+}
+
+@mixin text-blue-800 {
+	color: rgb(30 64 175);
+}
+
+@mixin text-blue-900 {
+	color: rgb(30 58 138);
+}
+
+@mixin text-indigo-50 {
+	color: rgb(238 242 255);
+}
+
+@mixin text-indigo-100 {
+	color: rgb(224 231 255);
+}
+
+@mixin text-indigo-200 {
+	color: rgb(199 210 254);
+}
+
+@mixin text-indigo-300 {
+	color: rgb(165 180 252);
+}
+
+@mixin text-indigo-400 {
+	color: rgb(129 140 248);
+}
+
+@mixin text-indigo-500 {
+	color: rgb(99 102 241);
+}
+
+@mixin text-indigo-600 {
+	color: rgb(79 70 229);
+}
+
+@mixin text-indigo-700 {
+	color: rgb(67 56 202);
+}
+
+@mixin text-indigo-800 {
+	color: rgb(55 48 163);
+}
+
+@mixin text-indigo-900 {
+	color: rgb(49 46 129);
+}
+
+@mixin text-violet-50 {
+	color: rgb(245 243 255);
+}
+
+@mixin text-violet-100 {
+	color: rgb(237 233 254);
+}
+
+@mixin text-violet-200 {
+	color: rgb(221 214 254);
+}
+
+@mixin text-violet-300 {
+	color: rgb(196 181 253);
+}
+
+@mixin text-violet-400 {
+	color: rgb(167 139 250);
+}
+
+@mixin text-violet-500 {
+	color: rgb(139 92 246);
+}
+
+@mixin text-violet-600 {
+	color: rgb(124 58 237);
+}
+
+@mixin text-violet-700 {
+	color: rgb(109 40 217);
+}
+
+@mixin text-violet-800 {
+	color: rgb(91 33 182);
+}
+
+@mixin text-violet-900 {
+	color: rgb(76 29 149);
+}
+
+@mixin text-purple-50 {
+	color: rgb(250 245 255);
+}
+
+@mixin text-purple-100 {
+	color: rgb(243 232 255);
+}
+
+@mixin text-purple-200 {
+	color: rgb(233 213 255);
+}
+
+@mixin text-purple-300 {
+	color: rgb(216 180 254);
+}
+
+@mixin text-purple-400 {
+	color: rgb(192 132 252);
+}
+
+@mixin text-purple-500 {
+	color: rgb(168 85 247);
+}
+
+@mixin text-purple-600 {
+	color: rgb(147 51 234);
+}
+
+@mixin text-purple-700 {
+	color: rgb(126 34 206);
+}
+
+@mixin text-purple-800 {
+	color: rgb(107 33 168);
+}
+
+@mixin text-purple-900 {
+	color: rgb(88 28 135);
+}
+
+@mixin text-fuchsia-50 {
+	color: rgb(253 244 255);
+}
+
+@mixin text-fuchsia-100 {
+	color: rgb(250 232 255);
+}
+
+@mixin text-fuchsia-200 {
+	color: rgb(245 208 254);
+}
+
+@mixin text-fuchsia-300 {
+	color: rgb(240 171 252);
+}
+
+@mixin text-fuchsia-400 {
+	color: rgb(232 121 249);
+}
+
+@mixin text-fuchsia-500 {
+	color: rgb(217 70 239);
+}
+
+@mixin text-fuchsia-600 {
+	color: rgb(192 38 211);
+}
+
+@mixin text-fuchsia-700 {
+	color: rgb(162 28 175);
+}
+
+@mixin text-fuchsia-800 {
+	color: rgb(134 25 143);
+}
+
+@mixin text-fuchsia-900 {
+	color: rgb(112 26 117);
+}
+
+@mixin text-pink-50 {
+	color: rgb(253 242 248);
+}
+
+@mixin text-pink-100 {
+	color: rgb(252 231 243);
+}
+
+@mixin text-pink-200 {
+	color: rgb(251 207 232);
+}
+
+@mixin text-pink-300 {
+	color: rgb(249 168 212);
+}
+
+@mixin text-pink-400 {
+	color: rgb(244 114 182);
+}
+
+@mixin text-pink-500 {
+	color: rgb(236 72 153);
+}
+
+@mixin text-pink-600 {
+	color: rgb(219 39 119);
+}
+
+@mixin text-pink-700 {
+	color: rgb(190 24 93);
+}
+
+@mixin text-pink-800 {
+	color: rgb(157 23 77);
+}
+
+@mixin text-pink-900 {
+	color: rgb(131 24 67);
+}
+
+@mixin text-rose-50 {
+	color: rgb(255 241 242);
+}
+
+@mixin text-rose-100 {
+	color: rgb(255 228 230);
+}
+
+@mixin text-rose-200 {
+	color: rgb(254 205 211);
+}
+
+@mixin text-rose-300 {
+	color: rgb(253 164 175);
+}
+
+@mixin text-rose-400 {
+	color: rgb(251 113 133);
+}
+
+@mixin text-rose-500 {
+	color: rgb(244 63 94);
+}
+
+@mixin text-rose-600 {
+	color: rgb(225 29 72);
+}
+
+@mixin text-rose-700 {
+	color: rgb(190 18 60);
+}
+
+@mixin text-rose-800 {
+	color: rgb(159 18 57);
+}
+
+@mixin text-rose-900 {
+	color: rgb(136 19 55);
+}
