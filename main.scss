@@ -1,13 +1,12 @@
-@import "./abstracts/functions";
-@import "./abstracts/mixins";
-@import "./abstracts/placeholders";
+@import "./abstracts/mixins-shadows";
 @import "./abstracts/variables-colors";
 @import "./abstracts/mixins-text-sizes";
 
+@import "./base/shadows";
 @import "./base/typography";
 @import "./base/text-sizes";
-@import "./base/text-weights";
 @import "./base/text-colors";
+@import "./base/text-weights";
 @import "./base/text-background-colors";
 
 @import "./layouts/responsive";

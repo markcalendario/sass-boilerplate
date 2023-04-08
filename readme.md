@@ -1,82 +1,144 @@
-A file structure from [AdamMarsden](https://github.com/AdamMarsden)
-
 # Sass Architecture Structure
+
+Unopinionated file structure of Syntactically Awesome Stylesheet (Sass).
+
+## Using SASS Compilers
+
+A Sass-compiled stylesheet uses one primary file that handles all the imports. Once that file is compiled, the compiler will generate a plain `.css` file that can be used to style an HTML.
+
+A sub-files must include an underscore `_[filename].scss`. The sub-files can be imported inside the primary file.
+
+Here's an example.
 
 ```
 sass/
 |
 |– base/
-|   |– _reset.scss       # Reset/normalize
-|   |– _typography.scss  # Typography rules
-|   ...                  # Etc…
+|   |– _default.scss        # Reset/normalize
+|   |– _typography.scss  	# Typography rules
+|   ...                  	# Etc…
 |
 |– components/
-|   |– _buttons.scss     # Buttons
-|   |– _carousel.scss    # Carousel
-|   |– _cover.scss       # Cover
-|   |– _dropdown.scss    # Dropdown
-|   ...                  # Etc…
+|   |– _buttons.scss    	# Buttons
+|   |– _dropdown.scss   	# Dropdown
+|   ...                  	# Etc…
 |
 |– layout/
-|   |– _navigation.scss  # Navigation
-|   |– _grid.scss        # Grid system
-|   |– _header.scss      # Header
-|   |– _footer.scss      # Footer
-|   |– _sidebar.scss     # Sidebar
-|   |– _forms.scss       # Forms
-|   ...                  # Etc…
+|   |– _navigation.scss  	# Navigation
+|   |– _grid.scss        	# Grid system
+|   ...                  	# Etc…
 |
 |– pages/
-|   |– _home.scss        # Home specific styles
-|   |– _contact.scss     # Contact specific styles
-|   ...                  # Etc…
+|   |– _home.scss        	# Home styles
+|   |– _login.scss	     	# Login styles
+|   ...                  	# Etc…
 |
 |– abstracts/
-|   |– _variables.scss   # Sass Variables
-|   |– _functions.scss   # Sass Functions
-|   |– _mixins.scss      # Sass Mixins
-|   |– _helpers.scss     # Class & placeholders helpers
+|   |– _variables.scss   	# Sass Variables
+|   |– _functions.scss   	# Sass Functions
+|   |– _mixins.scss      	# Sass Mixins
+|   ...                  	# Etc…
 |
 |– vendors/
-|   |– _bootstrap.scss   # Bootstrap
-|   |– _jquery-ui.scss   # jQuery UI
-|   ...                  # Etc…
+|   |– _bootstrap.scss   	# Bootstrap
+|   ...                  	# Etc…
 |
-|
-`– style.scss            # Primary Sass file
+|– style.scss               # Primary Sass file that '@imports' required files.
 ```
 
+The `style.scss` includes all the imported sub-files. Once it was compiled, it will generate a css file followed by its name `style.css`. The generated css file can be used as a normal stylesheet throughout an app.
 
+## Using CSS Modules
+
+CSS modules are popularly used in React JS and Next JS for preventing styling collision and overriding other class styles. CSS module will then generate a unique class names such as `myClass` to `myClass__djTxl3`. Notice the unqiue suffix.
+
+### Implementing CSS Modules
+
+Here, you may not use a Sass compiler that generates plain css file. However, in React, it requires you to install `sass` module. Reference: `https://www.npmjs.com/package/sass`
+
+```
+sass/
+|
+|– base/
+|   |– _default.scss        # Reset/normalize
+|   |– _typography.scss  	# Typography rules
+|   ...                  	# Etc…
+|
+|– components/
+|   |– buttons.module.scss  # Buttons Module
+|   |– dropdown.module.scss # Dropdown Module
+|   ...                  	# Etc…
+|
+|– layout/
+|   |– _navigation.scss  	# Navigation
+|   |– _grid.scss        	# Grid system
+|   ...                  	# Etc…
+|
+|– pages/
+|   |– home.module.scss     # Home styles
+|   |– login.module.scss	# Login styles
+|   ...                  	# Etc…
+|
+|– abstracts/
+|   |– _variables.scss   	# Sass Variables
+|   |– _functions.scss   	# Sass Functions
+|   |– _mixins.scss      	# Sass Mixins
+|   ...                  	# Etc…
+|
+|– vendors/
+|   |– _bootstrap.scss   	# Bootstrap
+|   ...                  	# Etc…
+|
+|– style.scss               # Primary Sass file that '@imports' required files.
+```
+
+Notice the changes on the file names on the files inside the `components` and `pages` directories. Here, the underscore (`_`) is removed and `module` is inserted to the name (`[filename.module.scss]`). By adding `.module` allows CSS modules to know that a scss file is a module.
+
+Global files such as the `style.scss` cannot be inserted on a JSX component, only the `module` files.
+
+#### Importing module file to a JSX component.
+
+On the top of the `.js` file, import the module file.
+
+```js
+import styles from "../path/to/file.module.scss";
+```
+
+Then, you can use the classes inside the module file as a property of an object.
+
+```js
+...
+<h1 className={styles.myTitle}> Hello, my class name is obfuscated. </h1>
+...
+
+// class name will be displayed as myTitle__[rand suffix]
+```
+
+## Definitions
 
 ### BASE FOLDER
 
-The `base/` folder holds what we might call the boilerplate code for the project. In there, you might find the reset file, some typographic rules, and probably a stylesheet, defining some standard styles for commonly used HTML elements.
+The `base/` folder contains boilerplate code, including a reset file, typographic rules, and a stylesheet defining standard styles for commonly used HTML elements.
 
 ### COMPONENTS FOLDER
 
-For smaller components, there is the `components/` folder. While `layout/` is macro (defining the global wireframe), `components/` is more focused on widgets. It contains all kind of specific modules like a slider, a loader, a widget, and basically anything along those lines. There are usually a lot of files in `components/` since the whole site/application should be mostly composed of tiny modules.
+The `components/` folder contains smaller components, such as sliders, loaders, widgets, and other specific modules. Unlike the `layout/` folder, which defines the global wireframe, `components/` is focused on widgets and contains many files because the site/application is composed mostly of tiny modules.
 
 ### LAYOUT FOLDER
 
-The `layout/` folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.
+The `layout/` folder includes stylesheets for laying out the site or application, such as for the header, footer, navigation, sidebar, grid system, and forms.
 
 ### PAGES FOLDER
 
-If you have page-specific styles, it is better to put them in a `pages/` folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a `_home.scss` file in `pages/`.
+To organize page-specific styles, it's recommended to create a `pages/` folder and name the file after the page. For example, if there are very specific styles for the home page, create a `_home.scss` file in the `pages/` folder.
 
 ### ABSTRACTS FOLDER
 
-The `abstracts/` folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin and placeholder should be put in here.
-
-The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own. These are nothing but Sass helpers.
+The `abstracts/` folder contains Sass tools and helpers used throughout the project, including global variables, functions, mixins, and placeholders. It's important that this folder doesn't output any CSS when compiled on its own, as these files are only meant to be Sass helpers.
 
 ### VENDORS FOLDER
 
-And last but not least, most projects will have a `vendors/` folder containing all the CSS files from external libraries and frameworks – Normalize, Bootstrap, jQueryUI, FancyCarouselSliderjQueryPowered, and so on. Putting those aside in the same folder is a good way to say “Hey, this is not from me, not my code, not my responsibility”.
-
-If you have to override a section of any vendor, I recommend you have an 8th folder called `vendors-extensions/` in which you may have files named exactly after the vendors they overwrite.
-
-For instance, `vendors-extensions/_boostrap.scss` is a file containing all CSS rules intended to re-declare some of Bootstrap’s default CSS. This is to avoid editing the vendor files themselves, which is generally not a good idea.
+The `vendors/` folder is used to store third-party CSS files from external libraries or frameworks that are used in the project. These files are not part of the project's code and are typically included in the project through a CDN (Content Delivery Network) or by downloading the files and placing them in the `vendors/` folder.
 
 ### STYLE FILE
 
@@ -84,9 +146,11 @@ The style file should be the only Sass file from the whole code base not to begi
 
 Files should be imported according to the folder they live in, one after the other in the following order:
 
-1. `abstracts/`
-2. `vendors/`
-3. `base/`
-4. `layout/`
-5. `components/`
-6. `pages/`
+```
+1. abstracts/
+2. vendors/
+3. base/
+4. layout/
+5. components/
+6. pages/
+```
