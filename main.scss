@@ -1,5 +1,6 @@
-@import "./abstracts/mixins-shadows";
 @import "./abstracts/variables-colors";
+@import "./abstracts/mixins-shadows";
+@import "./abstracts/mixins-border-radius";
 @import "./abstracts/mixins-text-sizes";
 
 @import "./base/shadows";
@@ -7,6 +8,7 @@
 @import "./base/text-sizes";
 @import "./base/text-colors";
 @import "./base/text-weights";
+@import "./base/border-radius";
 @import "./base/text-background-colors";
 
 @import "./layouts/responsive";
