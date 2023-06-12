@@ -1,10 +1,10 @@
+@forward "./base/bg-colors";
+@forward "./base/border-radius";
 @forward "./base/reset";
 @forward "./base/shadows";
-@forward "./base/typography";
-@forward "./base/text-sizes";
-@forward "./base/bg-colors";
 @forward "./base/text-colors";
+@forward "./base/text-sizes";
 @forward "./base/text-weights";
-@forward "./base/text-background-colors";
-@forward "./base/border-radius";
+@forward "./base/typography";
+
 @forward "./layouts/responsive";
