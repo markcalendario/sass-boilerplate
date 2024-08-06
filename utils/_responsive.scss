@@ -15,6 +15,11 @@
   }
 }
 
+@mixin fluid-container {
+  width: 90%;
+  margin: auto;
+}
+
 /* BREAK POINTS */
 
 @mixin col1 {

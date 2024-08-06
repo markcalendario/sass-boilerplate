@@ -1,10 +1,10 @@
-@forward "./base/bg-colors";
-@forward "./base/border-radius";
+@forward "./abstracts/variables-colors";
+
 @forward "./base/reset";
-@forward "./base/shadows";
-@forward "./base/text-colors";
-@forward "./base/text-sizes";
-@forward "./base/text-weights";
 @forward "./base/typography";
 
-@forward "./layouts/responsive";
+@forward "./utils/mixins-border-radius";
+@forward "./utils/mixins-screens";
+@forward "./utils/mixins-shadows";
+@forward "./utils/mixins-text-sizes";
+@forward "./utils/responsive";
